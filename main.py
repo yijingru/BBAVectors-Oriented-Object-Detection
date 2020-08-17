@@ -10,7 +10,7 @@ import os
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='CenterNet Modification Implementation')
+    parser = argparse.ArgumentParser(description='BBAVectors Implementation')
     parser.add_argument('--num_epoch', type=int, default=1, help='Number of epochs')
     parser.add_argument('--batch_size', type=int, default=1, help='Number of epochs')
     parser.add_argument('--num_workers', type=int, default=4, help='Number of workers')
