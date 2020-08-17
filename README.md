@@ -23,6 +23,9 @@ Oriented object detection in aerial images is a challenging task as the objects 
 Ubuntu 18.04, Python 3.6.10, PyTorch 1.6.0, OpenCV-Python 4.3.0.36 
 
 # How to start
+
+Download and install the DOTA developement tool kit [DOTA_devkit](https://github.com/CAPTAIN-WHU/DOTA_devkit) and put it under datasets.
+
 ## Train the model
 ```ruby
 python main.py --data_dir dataPath --epochs 80 --batch_size 16 --dataset dota --phase train
