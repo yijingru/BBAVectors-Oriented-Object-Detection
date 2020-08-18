@@ -1,5 +1,5 @@
 # BBAVectors-Oriented-Object-Detection
-[WACV2021] Oriented Object Detection in Aerial Images with Box Boundary-Aware Vectors
+[WACV2021] Oriented Object Detection in Aerial Images with Box Boundary-Aware Vectors ([arxiv](https://arxiv.org/pdf/2008.07043.pdf))
 
 Please cite the article in your publications if it helps your research:
 
