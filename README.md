@@ -38,6 +38,7 @@ python main.py --data_dir dataPath --epochs 80 --batch_size 16 --dataset dota --
 
 
 ## Evaluate the model
+You may adjust the conf_thresh to get a better mAP
 ```ruby
-python main.py --data_dir dataPath --epochs 80 --batch_size 16 --dataset dota --phase eval
+python main.py --data_dir dataPath --epochs 80 --conf_thresh 0.1 --batch_size 16 --dataset dota --phase eval
 ```
