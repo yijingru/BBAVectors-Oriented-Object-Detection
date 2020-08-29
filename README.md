@@ -21,7 +21,7 @@ Oriented object detection in aerial images is a challenging task as the objects 
 
 # Evaluation Results on [DOTA-v1.0](https://captain-whu.github.io/DOTA/evaluation.html)
 
-We evaluate the BBAVectors+rh on 4 RTX6000 GPUs with a larger batch size```--batch_size 48```, we get higher mAP (75.36) than the reported mAP (72.32) in the paper. We thank the public visitors for their effort. The model weights can be found [here](https://drive.google.com/drive/folders/1a5LirNJ9-jc21JV11WBGqDYKpur95sno?usp=sharing).
+When training the BBAVectors+rh on 4 RTX6000 GPUs with a larger batch size```--batch_size 48```, we get a higher mAP (75.36) than the reported mAP (72.32) in the paper. We thank the public visitors for their effort. The model weights can be found [here](https://drive.google.com/drive/folders/1a5LirNJ9-jc21JV11WBGqDYKpur95sno?usp=sharing).
 
 
 ```ruby
