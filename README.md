@@ -19,10 +19,19 @@ Oriented object detection in aerial images is a challenging task as the objects 
 	<img src="imgs/img1.png", width="800">
 </p>
 
+# Evaluation Results on [DOTA-v1.0](https://captain-whu.github.io/DOTA/evaluation.html)
+
+We evaluate the BBAVectors+rh on 4 RTX6000 GPUs with ```--batch_size 48```, we get higher mAP (74.93) than the reported mAP (72.32) in the paper. The model weights can be found [here](https://drive.google.com/drive/folders/1a5LirNJ9-jc21JV11WBGqDYKpur95sno?usp=sharing)
+
 
 ```ruby
 mAP: 0.7492727335105831
-ap of each class: plane:0.8859121197958046, baseball-diamond:0.8483251642688572, bridge:0.5214374843409882, ground-track-field:0.6560710395759289, small-vehicle:0.7773671634218439, large-vehicle:0.7427879633964128, ship:0.8804625721887132, tennis-court:0.908816372618596, basketball-court:0.862399364058993, storage-tank:0.8670730838290734, soccer-ball-field:0.5987801663737911, roundabout:0.6401450110418495, harbor:0.6698206063852568, swimming-pool:0.7071826121359568, helicopter:0.672510279226682
+ap of each class: plane:0.8859121197958046, baseball-diamond:0.8483251642688572,
+bridge:0.5214374843409882, ground-track-field:0.6560710395759289, small-vehicle:0.7773671634218439,
+large-vehicle:0.7427879633964128, ship:0.8804625721887132, tennis-court:0.908816372618596,
+basketball-court:0.862399364058993, storage-tank:0.8670730838290734, soccer-ball-field:0.5987801663737911,
+roundabout:0.6401450110418495, harbor:0.6698206063852568, swimming-pool:0.7071826121359568,
+helicopter:0.672510279226682
 ```
 
 
