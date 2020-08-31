@@ -103,7 +103,7 @@ class TestModule(object):
             with torch.no_grad():
                 pr_decs = self.model(image)
 
-            self.imshow_heatmap(pr_decs[2], image)
+            #self.imshow_heatmap(pr_decs[2], image)
 
             torch.cuda.synchronize(self.device)
             decoded_pts = []
@@ -131,7 +131,7 @@ class TestModule(object):
             end_time = time.time()
             total_time.append(end_time-begin_time)
 
-            """
+            #"""
             ori_image = dsets.load_image(cnt)
             height, width, _ = ori_image.shape
             # ori_image = cv2.resize(ori_image, (args.input_w, args.input_h))
@@ -187,7 +187,7 @@ class TestModule(object):
             if k == ord('q'):
                 cv2.destroyAllWindows()
                 exit()
-            """
+            #"""
 
         total_time = total_time[1:]
         print('avg time is {}'.format(np.mean(total_time)))
