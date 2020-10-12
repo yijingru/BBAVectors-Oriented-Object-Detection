@@ -41,6 +41,7 @@ Ubuntu 18.04, Python 3.6.10, PyTorch 1.6.0, OpenCV-Python 4.3.0.36
 # How to start
 
 Download and install the DOTA development kit [DOTA_devkit](https://github.com/CAPTAIN-WHU/DOTA_devkit) and put it under datasets folder.
+Please uncomment the ```nn.BatchNorm2d(head_conv)``` in ```'ctrbox_net.py``` to avoid ```NAN``` loss when training with a smaller batch size. Note that the current version of ```ctrbox_net.py``` matches the uploaded weights.
 
 ## Train the model
 ```ruby
