@@ -12,7 +12,7 @@ import os
 def parse_args():
     parser = argparse.ArgumentParser(description='BBAVectors Implementation')
     parser.add_argument('--num_epoch', type=int, default=1, help='Number of epochs')
-    parser.add_argument('--batch_size', type=int, default=1, help='Number of epochs')
+    parser.add_argument('--batch_size', type=int, default=1, help='Batch Size')
     parser.add_argument('--num_workers', type=int, default=4, help='Number of workers')
     parser.add_argument('--init_lr', type=float, default=1.25e-4, help='Init learning rate')
     parser.add_argument('--input_h', type=int, default=608, help='input height')
@@ -21,10 +21,10 @@ def parse_args():
     parser.add_argument('--conf_thresh', type=float, default=0.18, help='confidence threshold')
     parser.add_argument('--ngpus', type=int, default=0, help='number of gpus')
     parser.add_argument('--resume', type=str, default='model_44.pth', help='weights to be resumed')
-    parser.add_argument('--dataset', type=str, default='dota', help='weights to be resumed')
+    parser.add_argument('--dataset', type=str, default='dota', help='dataset to be used: dota hrsc')
     parser.add_argument('--data_dir', type=str, default='../Datasets/dota', help='data directory')
-    parser.add_argument('--phase', type=str, default='test', help='data directory')
-    parser.add_argument('--wh_channels', type=int, default=8, help='data directory')
+    parser.add_argument('--phase', type=str, default='test', help='phase: test train or eval')
+    parser.add_argument('--wh_channels', type=int, default=8, help='number of wh channels')
     args = parser.parse_args()
     return args
 
