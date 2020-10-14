@@ -43,19 +43,23 @@ Ubuntu 18.04, Python 3.6.10, PyTorch 1.6.0, OpenCV-Python 4.3.0.36
 Download and install the DOTA development kit [DOTA_devkit](https://github.com/CAPTAIN-WHU/DOTA_devkit) and put it under datasets folder.
 Please uncomment the ```nn.BatchNorm2d(head_conv)``` in ```'ctrbox_net.py``` to avoid ```NAN``` loss when training with a smaller batch size. Note that the current version of ```ctrbox_net.py``` matches the uploaded weights.
 
+The height and width of the input image crop can be set using ```--input_h``` ```--input_w``` options. Default is 608x608.
+
 ## Train the model
 ```ruby
-python main.py --data_dir dataPath --epochs 80 --batch_size 16 --dataset dota --phase train
+python main.py --data_dir dataPath --num_epoch 80 --batch_size 16 --dataset dota --phase train
 ```
 
 ## Test the model
 ```ruby
-python main.py --data_dir dataPath --epochs 80 --batch_size 16 --dataset dota --phase test
+python main.py --data_dir dataPath --num_epoch 80 --batch_size 16 --dataset dota --phase test
 ```
 
 
 ## Evaluate the model
 You may adjust the conf_thresh to get a better mAP
 ```ruby
-python main.py --data_dir dataPath --epochs 80 --conf_thresh 0.1 --batch_size 16 --dataset dota --phase eval
+python main.py --data_dir dataPath --num_epoch 80 --conf_thresh 0.1 --batch_size 16 --dataset dota --phase eval
 ```
+
+
