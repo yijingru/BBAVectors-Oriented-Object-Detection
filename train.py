@@ -83,6 +83,14 @@ class TrainModule(object):
         save_path = 'weights_'+args.dataset
         start_epoch = 1
         
+        # add resume part for continuing training when break previously, 10-16-2020
+        if args.resume_train:
+            self.model, self.optimizer, start_epoch = self.load_model(self.model, 
+                                                                        self.optimizer, 
+                                                                        args.resume_train, 
+                                                                        strict=True)
+        # end 
+
         if not os.path.exists(save_path):
             os.mkdir(save_path)
         if args.ngpus>1:
