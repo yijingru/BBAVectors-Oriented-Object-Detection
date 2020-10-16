@@ -21,15 +21,42 @@ class BaseDataset(data.Dataset):
         self.image_distort =  data_augment.PhotometricDistort()
 
     def load_img_ids(self):
+        """
+        Definition: generate self.img_ids
+        Usage: index the image properties (e.g. image name) for training, testing and evaluation
+        Format: self.img_ids = [list]
+        Return: self.img_ids
+        """
         return None
 
     def load_image(self, index):
+        """
+        Definition: read images online
+        Input: index, the index of the image in self.img_ids
+        Return: image with H x W x 3 format
+        """
         return None
 
     def load_annoFolder(self, img_id):
+        """
+        Return: the path of annotation
+        Note: You may not need this function
+        """
         return None
 
     def load_annotation(self, index):
+        """
+        Return: dictionary of {'pts': float np array of [bl, tl, tr, br], 
+                                'cat': int np array of class_index}
+        Explaination:
+                bl: bottom left point of the bounding box, format [x, y]
+                tl: top left point of the bounding box, format [x, y]
+                tr: top right point of the bounding box, format [x, y]
+                br: bottom right point of the bounding box, format [x, y]
+                class_index: the category index in self.category
+                    example: self.category = ['ship]
+                             class_index of ship = 0
+        """
         return None
 
     def dec_evaluation(self, result_path):
