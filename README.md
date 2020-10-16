@@ -21,7 +21,7 @@ Oriented object detection in aerial images is a challenging task as the objects 
 
 # Evaluation Results on [DOTA-v1.0](https://captain-whu.github.io/DOTA/evaluation.html)
 
-When training the BBAVectors+rh on 4 RTX6000 GPUs with a larger batch size```--batch_size 48```, we get a higher mAP (75.36) than the reported mAP (72.32) in the paper. We add the result to our final version. We thank the public visitors for their effort. The model weights can be found [here](https://drive.google.com/drive/folders/1a5LirNJ9-jc21JV11WBGqDYKpur95sno?usp=sharing).
+When training the BBAVectors+rh on 4 RTX6000 GPUs with a larger batch size```--batch_size 48```, we get a higher mAP (75.36) than the reported mAP (72.32) in the paper. We add the result to our final version. We thank the public visitors for their effort. The model weights can be downloaded from the following links: [GoogleDrive](https://drive.google.com/drive/folders/1a5LirNJ9-jc21JV11WBGqDYKpur95sno?usp=sharing) and [Dropbox](https://www.dropbox.com/sh/p7pz6silvy56f1a/AADHGlBKmdf5-7GBq2q7XBTua?dl=0).
 
 
 ```ruby
@@ -41,7 +41,7 @@ Ubuntu 18.04, Python 3.6.10, PyTorch 1.6.0, OpenCV-Python 4.3.0.36
 # How to start
 
 Download and install the DOTA development kit [DOTA_devkit](https://github.com/CAPTAIN-WHU/DOTA_devkit) and put it under datasets folder.
-Please uncomment the ```nn.BatchNorm2d(head_conv)``` in ```'ctrbox_net.py``` to avoid ```NAN``` loss when training with a smaller batch size. Note that the current version of ```ctrbox_net.py``` matches the uploaded weights.
+Please uncomment the ```nn.BatchNorm2d(head_conv)``` in ```ctrbox_net.py``` to avoid ```NAN``` loss when training with a smaller batch size. Note that the current version of ```ctrbox_net.py``` matches the uploaded weights.
 
 ## Train the model
 ```ruby
