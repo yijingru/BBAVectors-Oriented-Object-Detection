@@ -43,6 +43,20 @@ Ubuntu 18.04, Python 3.6.10, PyTorch 1.6.0, OpenCV-Python 4.3.0.36
 Download and install the DOTA development kit [DOTA_devkit](https://github.com/CAPTAIN-WHU/DOTA_devkit) and put it under datasets folder.
 Please uncomment the ```nn.BatchNorm2d(head_conv)``` in ```ctrbox_net.py``` to avoid ```NAN``` loss when training with a smaller batch size. Note that the current version of ```ctrbox_net.py``` matches the uploaded weights.
 
+# About DOTA
+The dota ```trainval``` and ```test``` datasets are cropped into ```600×600``` patches with a stride of `100` and two scales `0.5` and `1`. 
+
+The `trainval.txt` and `test.txt` used in `datasets/dataset_dota.py` contain the list of images without suffix, example
+```
+P0000__0.5__0___0
+P0000__0.5__0___1000
+P0000__0.5__0___1500
+P0000__0.5__0___2000
+P0000__0.5__0___2151
+P0000__0.5__0___500
+P0000__0.5__1000___0
+```
+
 ## Train the model
 ```ruby
 python main.py --data_dir dataPath --epochs 80 --batch_size 16 --dataset dota --phase train
