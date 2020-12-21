@@ -57,19 +57,23 @@ P0000__0.5__0___500
 P0000__0.5__1000___0
 ```
 
+The height and width of the input image crop can be set using ```--input_h``` ```--input_w``` options. Default is 608x608.
+
 ## Train the model
 ```ruby
-python main.py --data_dir dataPath --epochs 80 --batch_size 16 --dataset dota --phase train
+python main.py --data_dir dataPath --num_epoch 80 --batch_size 16 --dataset dota --phase train
 ```
 
 ## Test the model
 ```ruby
-python main.py --data_dir dataPath --epochs 80 --batch_size 16 --dataset dota --phase test
+python main.py --data_dir dataPath --num_epoch 80 --batch_size 16 --dataset dota --phase test
 ```
 
 
 ## Evaluate the model
 You may adjust the conf_thresh to get a better mAP
 ```ruby
-python main.py --data_dir dataPath --epochs 80 --conf_thresh 0.1 --batch_size 16 --dataset dota --phase eval
+python main.py --data_dir dataPath --num_epoch 80 --conf_thresh 0.1 --batch_size 16 --dataset dota --phase eval
 ```
+
+
