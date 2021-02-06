@@ -58,8 +58,9 @@ P0000__0.5__0___500
 P0000__0.5__1000___0
 ```
 
-Some people would be interested in the format of the ground-truth, I provided some examples for DOTA dataset:
+Some people would be interested in the format of the ground-truth, I provide some examples for DOTA dataset:
 Format: `x1, y1, x2, y2, x3, y3, x4, y4, category, difficulty`
+
 Examples: 
 ```
 275.0 463.0 411.0 587.0 312.0 600.0 222.0 532.0 tennis-court 0
