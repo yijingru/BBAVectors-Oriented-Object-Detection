@@ -81,7 +81,7 @@ python main.py --data_dir dataPath --batch_size 16 --dataset dota --phase test
 
 
 ## Evaluate the model
-You may adjust the conf_thresh to get a better mAP. Please zip the `merge_dota` for the DOTA external evaluation.
+You may adjust the conf_thresh to get a better mAP. Please zip the `merge_dota` for the DOTA [Task1](https://captain-whu.github.io/DOTA/evaluation.html) evaluation.
 ```ruby
 python main.py --data_dir dataPath --conf_thresh 0.1 --batch_size 16 --dataset dota --phase eval
 ```
