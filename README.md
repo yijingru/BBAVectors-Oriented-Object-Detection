@@ -3,11 +3,12 @@
 
 Please cite the article in your publications if it helps your research:
 
-	@inproceedings{yi2021wacv,
-	  title={Oriented Object Detection in Aerial Images with Box Boundary-Aware Vectors},
-	  author={Yi, Jingru and Wu, Pengxiang and Liu, Bo and Huang, Qiaoying and Qu, Hui and Metaxas, Dimitris N},
-	  booktitle={WACV},
-	  year={2021},
+	@inproceedings{yi2021oriented,
+	title={Oriented object detection in aerial images with box boundary-aware vectors},
+	author={Yi, Jingru and Wu, Pengxiang and Liu, Bo and Huang, Qiaoying and Qu, Hui and Metaxas, Dimitris},
+	booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+	pages={2150--2159},
+	year={2021}
 	}
 
 
@@ -56,6 +57,16 @@ P0000__0.5__0___2151
 P0000__0.5__0___500
 P0000__0.5__1000___0
 ```
+
+Some people would be interested in the format of the ground-truth, I provided some examples for DOTA dataset:
+Format: `x1, y1, x2, y2, x3, y3, x4, y4, category, difficulty`
+Examples: 
+```
+275.0 463.0 411.0 587.0 312.0 600.0 222.0 532.0 tennis-court 0
+341.0 376.0 487.0 487.0 434.0 556.0 287.0 444.0 tennis-court 0
+428.0 6.0 519.0 66.0 492.0 108.0 405.0 50.0 bridge 0
+```
+
 
 ## Train the model
 ```ruby
