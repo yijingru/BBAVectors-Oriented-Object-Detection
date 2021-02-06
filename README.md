@@ -69,22 +69,22 @@ Examples:
 ```
 
 
-## Train the model
+## Train model
 ```ruby
 python main.py --data_dir dataPath --epochs 80 --batch_size 16 --dataset dota --phase train
 ```
 
-## Test the model
+## Test model
 ```ruby
 python main.py --data_dir dataPath --batch_size 16 --dataset dota --phase test
 ```
 
 
-## Evaluate the model
+## Evaluate model
 ```ruby
 python main.py --data_dir dataPath --conf_thresh 0.1 --batch_size 16 --dataset dota --phase eval
 ```
 
-You may adjust the `conf_thresh` to get a better `mAP`. 
+You may change `conf_thresh` to get a better `mAP`. 
 
-Please zip the generated `merge_dota` for the DOTA [Task1](https://captain-whu.github.io/DOTA/evaluation.html) evaluation.
+Please zip and upload the generated `merge_dota` for DOTA [Task1](https://captain-whu.github.io/DOTA/evaluation.html) evaluation.
