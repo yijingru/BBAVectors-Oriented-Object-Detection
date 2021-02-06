@@ -64,12 +64,12 @@ python main.py --data_dir dataPath --epochs 80 --batch_size 16 --dataset dota --
 
 ## Test the model
 ```ruby
-python main.py --data_dir dataPath --epochs 80 --batch_size 16 --dataset dota --phase test
+python main.py --data_dir dataPath --batch_size 16 --dataset dota --phase test
 ```
 
 
 ## Evaluate the model
-You may adjust the conf_thresh to get a better mAP
+You may adjust the conf_thresh to get a better mAP. Please zip the `merge_dota` for the DOTA external evaluation.
 ```ruby
-python main.py --data_dir dataPath --epochs 80 --conf_thresh 0.1 --batch_size 16 --dataset dota --phase eval
+python main.py --data_dir dataPath --conf_thresh 0.1 --batch_size 16 --dataset dota --phase eval
 ```
