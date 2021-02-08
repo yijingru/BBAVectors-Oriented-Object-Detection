@@ -45,6 +45,8 @@ Download and install the DOTA development kit [DOTA_devkit](https://github.com/C
 Please uncomment the ```nn.BatchNorm2d(head_conv)``` in ```ctrbox_net.py``` to avoid ```NAN``` loss when training with a smaller batch size. Note that the current version of ```ctrbox_net.py``` matches the uploaded weights.
 
 # About DOTA
+You mush `split` the DOTA images from [DOTA_devkit](https://github.com/CAPTAIN-WHU/DOTA_devkit) before training, testing and evaluation.
+
 The dota ```trainval``` and ```test``` datasets are cropped into ```600×600``` patches with a stride of `100` and two scales `0.5` and `1`. 
 
 The `trainval.txt` and `test.txt` used in `datasets/dataset_dota.py` contain the list of image names without suffix, example:
