@@ -72,7 +72,6 @@ Examples:
 ```
 ## Data Arrangment
 ### DOTA
-The data can be arranged as:
 ```
 data_dir/
         images/*.png
@@ -82,7 +81,6 @@ data_dir/
 ```
 you may modify `datasets/dataset_dota.py` to adapt code to your own data.
 ### HRSC
-The data can be arranged as:
 ```
 data_dir/
         AllImages/*.bmp
