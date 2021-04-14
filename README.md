@@ -70,8 +70,8 @@ Examples:
 341.0 376.0 487.0 487.0 434.0 556.0 287.0 444.0 tennis-court 0
 428.0 6.0 519.0 66.0 492.0 108.0 405.0 50.0 bridge 0
 ```
-# Data Arrangment
-## DOTA
+## Data Arrangment
+### DOTA
 The data can be arranged as:
 ```
 data_dir/
@@ -81,7 +81,7 @@ data_dir/
         test.txt
 ```
 you may modify `datasets/dataset_dota.py` to adapt code to your own data.
-## HRSC
+### HRSC
 The data can be arranged as:
 ```
 data_dir/
