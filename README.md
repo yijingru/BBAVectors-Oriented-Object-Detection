@@ -86,12 +86,12 @@ The data can be arranged as:
 ```
 data_dir/
         AllImages/*.bmp
-		Annotations/*.xml
+	Annotations/*.xml
 		train.txt
 		test.txt
 		val.txt
 ```
-you may modify `datasets/dataset_dota.py` to adapt code to your own data.
+you may modify `datasets/dataset_hrsc.py` to adapt code to your own data.
 
 
 ## Train Model
