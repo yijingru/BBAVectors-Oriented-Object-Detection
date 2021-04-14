@@ -86,7 +86,7 @@ The data can be arranged as:
 ```
 data_dir/
         AllImages/*.bmp
-	Annotations/*.xml
+		Annotations/*.xml
 		train.txt
 		test.txt
 		val.txt
