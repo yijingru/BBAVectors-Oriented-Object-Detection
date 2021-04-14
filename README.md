@@ -45,10 +45,12 @@ Download and install the DOTA development kit [DOTA_devkit](https://github.com/C
 Please uncomment the ```nn.BatchNorm2d(head_conv)``` in ```ctrbox_net.py``` to avoid ```NAN``` loss when training with a smaller batch size. Note that the current version of ```ctrbox_net.py``` matches the uploaded weights.
 
 # About DOTA
+## Split image
 You mush `split` the DOTA images from [DOTA_devkit](https://github.com/CAPTAIN-WHU/DOTA_devkit) before training, testing and evaluation.
 
 The dota ```trainval``` and ```test``` datasets are cropped into ```600×600``` patches with a stride of `100` and two scales `0.5` and `1`. 
 
+## About txt files
 The `trainval.txt` and `test.txt` used in `datasets/dataset_dota.py` contain the list of image names without suffix, example:
 ```
 P0000__0.5__0___0
@@ -59,7 +61,6 @@ P0000__0.5__0___2151
 P0000__0.5__0___500
 P0000__0.5__1000___0
 ```
-
 Some people would be interested in the format of the ground-truth, I provide some examples for DOTA dataset:
 Format: `x1, y1, x2, y2, x3, y3, x4, y4, category, difficulty`
 
@@ -69,8 +70,18 @@ Examples:
 341.0 376.0 487.0 487.0 434.0 556.0 287.0 444.0 tennis-court 0
 428.0 6.0 519.0 66.0 492.0 108.0 405.0 50.0 bridge 0
 ```
+## Data Arrangment
+The data can be arranged as:
+```
+data_dir/
+        images/*.png
+        labelTxt/*.txt
+        trainval.txt
+        test.txt
+```
+you may modify `datasets/dataset_dota.py` to adapt code to your own data.
 
-
+# Experiments
 ## Train model
 ```ruby
 python main.py --data_dir dataPath --epochs 80 --batch_size 16 --dataset dota --phase train
