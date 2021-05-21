@@ -67,7 +67,7 @@ class BaseDataset(data.Dataset):
         crop_size = None
         crop_center = None
         crop_size, crop_center = random_crop_info(h=image.shape[0], w=image.shape[1])
-        image, gt_pts, crop_center = random_flip(image, annotation['pts'], crop_center)
+        image, annotation['pts'], crop_center = random_flip(image, annotation['pts'], crop_center)
         if crop_center is None:
             crop_center = np.asarray([float(image.shape[1])/2, float(image.shape[0])/2], dtype=np.float32)
         if crop_size is None:

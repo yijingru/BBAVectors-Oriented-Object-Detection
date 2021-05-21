@@ -46,7 +46,7 @@ Please uncomment the ```nn.BatchNorm2d(head_conv)``` in ```ctrbox_net.py``` to a
 
 ## About DOTA
 ### Split Image
-You mush `split` the DOTA images from [DOTA_devkit](https://github.com/CAPTAIN-WHU/DOTA_devkit) before training, testing and evaluation.
+Split the DOTA images from [DOTA_devkit](https://github.com/CAPTAIN-WHU/DOTA_devkit) before training, testing and evaluation.
 
 The dota ```trainval``` and ```test``` datasets are cropped into ```600×600``` patches with a stride of `100` and two scales `0.5` and `1`. 
 

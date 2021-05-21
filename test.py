@@ -48,7 +48,7 @@ class TestModule(object):
     def imshow_heatmap(self, pr_dec, images):
         wh = pr_dec['wh']
         hm = pr_dec['hm']
-        cls_theta = pr_decs['cls_theta']
+        cls_theta = pr_dec['cls_theta']
         wh_w = wh[0, 0, :, :].data.cpu().numpy()
         wh_h = wh[0, 1, :, :].data.cpu().numpy()
         hm = hm[0, 0, :, :].data.cpu().numpy()
