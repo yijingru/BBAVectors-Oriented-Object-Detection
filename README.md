@@ -1,3 +1,4 @@
+Update (10-10-2021) My email has been changed to yijingru321@gmail.com.
 # BBAVectors-Oriented-Object-Detection
 [WACV2021] Oriented Object Detection in Aerial Images with Box Boundary-Aware Vectors ([arXiv](https://arxiv.org/pdf/2008.07043.pdf))
 
