@@ -101,7 +101,7 @@ class TrainModule(object):
         self.model.to(self.device)
 
         criterion = loss.LossAll()
-        print('Setting up data...')
+        print('Setting up data... here')
 
         dataset_module = self.dataset[args.dataset]
 
@@ -121,7 +121,7 @@ class TrainModule(object):
                                                            drop_last=True,
                                                            collate_fn=collater)
 
-        print('Starting training...')
+        print('Starting training... Here')
         train_loss = []
         ap_list = []
         for epoch in range(start_epoch, args.num_epoch+1):
