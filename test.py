@@ -167,7 +167,7 @@ class TestModule(object):
                     ori_image = cv2.drawContours(ori_image, [np.int0(box)], -1, (255,0,255),1,1)
                     # box = cv2.boxPoints(cv2.minAreaRect(box))
                     # ori_image = cv2.drawContours(ori_image, [np.int0(box)], -1, (0,255,0),1,1)
-                    cv2.putText(ori_image, '{:.2f} {}'.format(score, cat), (box[1][0], box[1][1]),
+                    cv2.putText(ori_image, '{:.2f} {}'.format(score, cat), (int(box[1][0]), int(box[1][1])),
                                 cv2.FONT_HERSHEY_COMPLEX, 0.5, (0,255,255), 1,1)
 
             if args.dataset == 'hrsc':
