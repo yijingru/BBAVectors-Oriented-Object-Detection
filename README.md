@@ -51,7 +51,10 @@ Split the DOTA images from [DOTA_devkit](https://github.com/CAPTAIN-WHU/DOTA_dev
 
 The dota ```trainval``` and ```test``` datasets are cropped into ```600×600``` patches with a stride of `100` and two scales `0.5` and `1`. 
 
-### About txt Files
+## Remove Images That Do Not Have Objects [Relate to NAN Loss]
+For Issue [About Loss NaN](https://github.com/yijingru/BBAVectors-Oriented-Object-Detection/issues/15), @navidasj96 has found that removing images that do not have any objects inside will help resolve the NAN loss issue. 
+
+### About Split TXT Files
 The `trainval.txt` and `test.txt` used in `datasets/dataset_dota.py` contain the list of image names without suffix, example:
 ```
 P0000__0.5__0___0
